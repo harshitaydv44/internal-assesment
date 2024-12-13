@@ -1,0 +1,134 @@
+/*
+     give the following specification as 
+     margin and padding as 0;
+        box-sizing  as border-box;
+     font-family as  "Open Sans", sans-serif;
+    
+    
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+
+
+
+.carousel-item img{
+
+   
+    /*  define the carousel with width: 100% and height: 93vh;*/
+    height:93vh;
+    width:100%;
+
+    }
+    
+    .About_Us{
+       /* 
+       Define the  min-width: 90% and max-height: 700px*/
+       min-width:90%;
+       max-height:700px;
+    }
+    
+    .services .row>* {
+        padding-right:0;
+        padding-left:0;
+    }
+    .row my-5{
+        /* define the display such that it behaves like a FLEXBOX
+        display: **;*/
+        display:flexbox;
+    }
+    .offer_style{
+        /* 
+        
+        Set the background color as per your wish
+        
+        */
+        background-color:rgb(153, 176, 214);
+
+    }
+    .Juhuimg{
+        height: 20rem;
+    }
+    .footer{
+        background-color: #808080;
+        text-align: center;
+        margin-bottom: -3rem;
+    }
+    .footer2{
+        background-color: #808080;
+        text-align: center;
+        margin-top: 13rem;
+    }
+    
+    .card-img-wrapper {
+        display: flex;
+        justify-content: center;
+      }
+      
+      .medium-img {
+        max-height: 500px; /* Adjusted height for medium size */
+        width: auto;
+        object-fit: cover; 
+      }
+
+
+      /*responsive css code*/
+/*// X-Small devices (portrait phones, less than 576px)*/
+/*// No media query for `xs` since this is the default in Bootstrap*/
+
+/*// Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) { 
+    .carousel-item img {
+        height: 80vh;
+    }
+    .About_Us {
+        padding: 10px;
+    }
+ }
+
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) { 
+    .services .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .footer, .footer2 {
+        margin-top: 10rem;
+        margin-bottom: -1rem;
+    }
+
+ }
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) { 
+    .Juhuimg {
+        height: 25rem;
+    }
+    .card-img-wrapper {
+        justify-content: space-between;
+    }
+ }
+
+/*// X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
+    .About_Us {
+        max-width: 85%;
+    }
+    .carousel-item img {
+        height: 90vh;
+    }
+ }
+
+/*// XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) { 
+    .body {
+    font-size: 1.2rem;
+}
+.services .row {
+    margin: 2rem auto;
+}
+}
